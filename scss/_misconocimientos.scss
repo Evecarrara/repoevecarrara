@@ -1,0 +1,67 @@
+//nesting - anidacion 
+
+.mis-conocimientos {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 50px;
+    border-width: 5px;
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .grid-conocimientos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+.conocimientos {
+    height: 240px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 80px -24px rgba(0, 0, 0, 0.75) inset;
+    background-color: $colorprincipal;
+    color: #2e2e31;
+}
+img {
+    height: 45%;
+    filter: grayscale(1);
+}
+img:hover{
+    filter: none;
+    transition: filter 1s;
+}
+p {
+    font-size: 35px;
+}
+
+}
+
+.grid-quote-section {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    /*width: 1350px;*/
+    width: 100%;
+    font-size: 30px;
+    background: $colorgradient;
+}
+
+
+
+ 
+
+

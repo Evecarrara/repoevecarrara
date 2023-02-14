@@ -1,0 +1,137 @@
+//variable de colores
+$colorprincipal: #ffffff;
+$colorsecundario:  rgb(226, 210, 210);
+$colorcaja:  #f6f7fb;
+$colorgradient: (circle, rgba(0, 0, 0, 1) 0%, rgba(41, 31, 31, 1) 48%, rgba(174, 194, 198, 1) 100%);
+//import
+@import"_portafolio" ;
+@import"_misconocimientos";
+@import"_contactos";
+@import"responsive";
+
+
+
+
+.contenido-header {
+    li a {
+        margin: 10px;
+        list-style: none;
+        text-decoration: none;
+        color: $colorprincipal ;
+    
+    }
+    li a:hover {
+        color: $colorsecundario ;
+    
+    }
+    .container-fluid {
+        background: $colorgradient;
+    }
+    .container-fluid a, a:hover {
+        color: $colorprincipal ;
+      
+    }
+    .navbar-toggler {
+        background-color: $colorprincipal ;
+    }
+}
+
+
+.redes{
+    a i {
+        width: 100px;
+        text-align: center;
+        color: $colorprincipal ;
+        font-size: 50px;
+    }
+    a i:hover {
+        color: $colorsecundario ;
+    }
+    
+}
+
+.sobre-mi {
+    display: flex;
+    margin: 100px;
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 32px;
+    }
+    img {
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+    a:link {
+        text-decoration: none;
+    }
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+    text-align: center;
+}
+
+input,
+textarea {
+    border: 0;
+    border-radius: 20px;
+    background-color: $colorcaja ;
+    border: 1px solid $colorcaja;
+    font-size: var(--text-sm);
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%);
+    transition: 0.2s;
+}
+
+.finale {
+    min-height: 70px;
+    display: flex;
+    font-size: 20px;
+    background: $colorgradient;
+    width: 100%;
+}
+
+.finale {
+    text-align: center;
+    flex-direction: column;
+    p {
+        padding-top: 20px;
+        color: $colorprincipal;
+    }
+}
+
+
+
+@media(max-width:576px) {
+    .grid-proyectos {
+        display: grid;
+        justify-content: center;
+    }
+
+    .imagen-sobremi {
+        display: none;
+    }
+
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+        border-width: 5px;
+    }
+
+    .sobre-mi p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
